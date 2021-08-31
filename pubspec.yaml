@@ -31,6 +31,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  google_fonts: 
+  responsive_framework:                                                                                                                                     
+  flutter_icons: 
+  smooth_page_indicator: 
+  carousel_slider: 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -41,8 +46,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  
+  # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/credentials.json
+    - assets/
+  #   - images/a_dot_ham.jpeg
 
 analyzer:
   enable-experiment:
