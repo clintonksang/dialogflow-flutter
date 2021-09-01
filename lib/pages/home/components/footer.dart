@@ -10,26 +10,26 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/mappin.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "P.O. BOX 43844 -00199,",
+    text2: "Chandaria BIIC, KU, Nairobi",
   ),
   FooterItem(
     iconPath: "assets/phone.png",
     title: "PHONE",
-    text1: "+1 618-689-9604",
-    text2: "+1 781-689-9632",
+    text1: "+254 746 740 825",
+    text2: "+254 716 813 714",
   ),
   FooterItem(
     iconPath: "assets/email.png",
     title: "EMAIL",
-    text1: "hello@example.com",
-    text2: "info@flutterpanda.com",
+    text1: "info@scanpal.co.ke",
+    text2: "marketing@scanpal.co.ke",
   ),
   FooterItem(
     iconPath: "assets/whatsapp.png",
     title: "WHATSAPP",
-    text1: "+234 901-134-0095",
-    text2: "+234 901-134-0095",
+    text1: "+254 746 740 825",
+    text2: "+254 716 813 714",
   )
 ];
 

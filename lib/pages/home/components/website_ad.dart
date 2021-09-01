@@ -40,7 +40,7 @@ class WebsiteAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "WEBSITE",
+                          "Analytics",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -51,7 +51,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "EVOLVING NAGA\nRESORT WEBSITE",
+                          "Learn . Adapt . Grow",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -63,7 +63,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Learn what issues your customers are facing and work to provide themmuch value",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,

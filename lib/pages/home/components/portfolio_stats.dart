@@ -6,10 +6,10 @@ import 'package:scanpalweb/utils/constants.dart';
 import 'package:scanpalweb/utils/screen_helper.dart';
 
 final List<Stat> stats = [
-  Stat(count: "43", text: "Clients"),
-  Stat(count: "68+", text: "Projects"),
-  Stat(count: "17", text: "Awards"),
-  Stat(count: "10", text: "Years\nExperience"),
+  Stat(count: "12", text: "Clients"),
+  Stat(count: "200+", text: "Projects"),
+  Stat(count: "5", text: "Integration"),
+  Stat(count: "4 Mins", text: "Saved on customer \n service"),
 ];
 
 class PortfolioStats extends StatelessWidget {

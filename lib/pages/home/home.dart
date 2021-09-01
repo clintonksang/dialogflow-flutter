@@ -8,7 +8,7 @@ import 'package:scanpalweb/pages/home/components/footer.dart';
 import 'package:scanpalweb/pages/home/components/header.dart';
 import 'package:scanpalweb/pages/home/components/ios_app_ad.dart';
 import 'package:scanpalweb/pages/home/components/portfolio_stats.dart';
-import 'package:scanpalweb/pages/home/components/skill_section.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:scanpalweb/pages/home/components/sponsors.dart';
 import 'package:scanpalweb/pages/home/components/testimonial_widget.dart';
 import 'package:scanpalweb/pages/home/components/website_ad.dart';
@@ -19,15 +19,17 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        child: IconButton(onPressed: (){
+//       floatingActionButton: FloatingActionButton(
+//         onPressed: () {
+//           Navigator.push(context, (MaterialPageRoute(builder: (context,)=> Chat() )));
+//         },
+// //      
+// //   child: IconButton(onPressed: (){
 
-    Material(
-      child: 
-      Chat());
+// // Navigator.push(context, (MaterialPageRoute(builder: (context,)=> )));
 
-        }, icon: Icon(Icons.chat_bubble)),
-      ),
+// //         }, icon: Icon(Icons.chat_bubble)),
+//       ),
       key: Globals.scaffoldKey,
       endDrawer: Drawer(
         child: SafeArea(
@@ -92,24 +94,42 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              CvSection(),
+              // CvSection(),
               IosAppAd(),
               SizedBox(
                 height: 70.0,
               ),
               WebsiteAd(),
+               SizedBox(
+                height: 20.0,
+              ),
+              Align(
+                alignment: Alignment.center,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 28.0),
+                  child: Text(
+                              "Portfolio",
+                              style: GoogleFonts.oswald(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                height: 1.3,
+                                fontSize: 35.0,
+                              ),
+                            ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 28.0),
                 child: PortfolioStats(),
               ),
-              SizedBox(
-                height: 50.0,
-              ),
-              EducationSection(),
-              SizedBox(
-                height: 50.0,
-              ),
-              SkillSection(),
+              // SizedBox(
+              //   height: 50.0,
+              // ),
+              // EducationSection(),
+              // SizedBox(
+              //   height: 50.0,
+              // ),
+              // SkillSection(),
               SizedBox(
                 height: 50.0,
               ),

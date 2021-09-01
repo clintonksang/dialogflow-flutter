@@ -21,6 +21,7 @@ class IosAppAd extends StatelessWidget {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
+
           return ResponsiveWrapper(
             maxWidth: width,
             minWidth: width,
@@ -47,7 +48,7 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
+                          "INTEGRATE ANYWHERE",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -57,20 +58,20 @@ class IosAppAd extends StatelessWidget {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(
-                          "UNIVERSAL\nSMART HOME APP",
-                          style: GoogleFonts.oswald(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w900,
-                            height: 1.3,
-                            fontSize: 35.0,
-                          ),
-                        ),
+                        // Text(
+                        //   "UNIVERSAL\nSMART HOME APP",
+                        //   style: GoogleFonts.oswald(
+                        //     color: Colors.white,
+                        //     fontWeight: FontWeight.w900,
+                        //     height: 1.3,
+                        //     fontSize: 35.0,
+                        //   ),
+                        // ),
                         SizedBox(
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Whether you're building for Web Integration, App, Social Media, or Text We got you covered.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,
@@ -97,7 +98,7 @@ class IosAppAd extends StatelessWidget {
                                   onPressed: () {},
                                   child: Center(
                                     child: Text(
-                                      "EXPLORE MORE",
+                                      "Documentation",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.0,
@@ -126,7 +127,7 @@ class IosAppAd extends StatelessWidget {
                                   onPressed: () {},
                                   child: Center(
                                     child: Text(
-                                      "NEXT APP",
+                                      "Contact Us",
                                       style: TextStyle(
                                         color: kPrimaryColor,
                                         fontSize: 13.0,

@@ -186,48 +186,52 @@ class _ChatState extends State<Chat> {
   //------------------------------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
-      Flexible(
-          child: ListView.builder(
-            padding: EdgeInsets.all(8.0),
-            reverse: true,
-            itemBuilder: (_, int index) => _messages[index],
-            itemCount: _messages.length,
-          )),
-      Divider(height: 1.0),
-      Container(
-          decoration: BoxDecoration(color: Theme.of(context).cardColor),
-          child: IconTheme(
-            data: IconThemeData(color: Theme.of(context).accentColor),
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: Row(
-                children: <Widget>[
-                  Flexible(
-                    child: TextField(
-                      controller: _textController,
-                      onSubmitted: handleSubmitted,
-                      decoration: InputDecoration.collapsed(hintText: "Send a message"),
-                    ),
+    return Scaffold(
+      body: Container(
+        child: Column(children: <Widget>[
+          Flexible(
+              child: ListView.builder(
+                padding: EdgeInsets.all(8.0),
+                reverse: true,
+                itemBuilder: (_, int index) => _messages[index],
+                itemCount: _messages.length,
+              )),
+          Divider(height: 1.0),
+          Container(
+              decoration: BoxDecoration(color: Theme.of(context).cardColor),
+              child: IconTheme(
+                data: IconThemeData(color: Theme.of(context).accentColor),
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Row(
+                    children: <Widget>[
+                      Flexible(
+                        child: TextField(
+                          controller: _textController,
+                          onSubmitted: handleSubmitted,
+                          decoration: InputDecoration.collapsed(hintText: "Send a message"),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 4.0),
+                        child: IconButton(
+                          icon: Icon(Icons.send),
+                          onPressed: () => handleSubmitted(_textController.text),
+                        ),
+                      ),
+                      IconButton(
+                        iconSize: 30.0,
+                        icon: Icon(_isRecording ? Icons.mic_off : Icons.mic),
+                        onPressed: _isRecording ? stopStream : handleStream,
+                      ),
+                    ],
                   ),
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 4.0),
-                    child: IconButton(
-                      icon: Icon(Icons.send),
-                      onPressed: () => handleSubmitted(_textController.text),
-                    ),
-                  ),
-                  IconButton(
-                    iconSize: 30.0,
-                    icon: Icon(_isRecording ? Icons.mic_off : Icons.mic),
-                    onPressed: _isRecording ? stopStream : handleStream,
-                  ),
-                ],
-              ),
-            ),
-          )
+                ),
+              )
+          ),
+        ]),
       ),
-    ]);
+    );
   }
 }
 
